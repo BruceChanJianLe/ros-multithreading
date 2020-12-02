@@ -9,4 +9,5 @@ This repository is currently undergoing construction. Please come back again lat
 - https://answers.ros.org/question/53055/ros-callbacks-threads-and-spinning/
 - https://answers.ros.org/question/185153/ros-multithreading-example/
 - https://roboticsbackend.com/ros-asyncspinner-example/
+- https://levelup.gitconnected.com/ros-spinning-threading-queuing-aac9c0a793f
 
