@@ -2,6 +2,14 @@
 
 This repository is currently undergoing construction. Please come back again later.  
 
+## Multiple Queues
+
+This method is generally preferred. Having multiple queues and threads to handle each callback.
+
+## Multiple Callback
+
+Allowing multiple threads to preform same callback at the same time.
+
 ## Reference
 
 - http://wiki.ros.org/roscpp/Overview/Callbacks%20and%20Spinning
