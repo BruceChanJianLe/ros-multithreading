@@ -2,9 +2,22 @@
 
 This repository is currently undergoing construction. Please come back again later.  
 
+In ROS there are two types of objects handling callbacks:
+
+- Spinner
+- Callback Queue
+
+**Spinner:** Spinner object has the ability to call callback message contained in a callback queue.  
+**Callback Queue:** Callback queue object appends an callback message to its queue.  
+
+An ordinary ROS node with two subscribers.  
+![img](resources/ordinary.png)
+
 ## Multiple Queues
 
 This method is generally preferred. Having multiple queues and threads to handle each callback.
+
+A ROS
 
 ## Multiple Callback
 
