@@ -13,15 +13,16 @@ In ROS there are two types of objects handling callbacks:
 An ordinary ROS node with two subscribers.  
 ![img](resources/ordinary.png)
 
-## Multiple Queues
+## Multiple Callback Queues and Multiple Spinners
 
-This method is generally preferred. Having multiple queues and threads to handle each callback.
+This method is generally preferred. Having multiple callback queues and spinners (threads) to handle each callback queue.
 
-A ROS
+A ROS node with multiple callback queues and spinners.  
+![img](resources/multi_cq_multi_sp.png)
 
-## Multiple Callback
+## Multiple Spinners
 
-Allowing multiple threads to preform same callback at the same time.
+Allowing multiple spinners (threads) to preform same callback at the same time.
 
 ## Reference
 
