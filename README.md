@@ -19,6 +19,10 @@ Regarding to spinners, currently there are three implementation in ROS.
 - [**Multi-Threaded Spinner**](http://ros.org/doc/groovy/api/roscpp/html/classros_1_1MultiThreadedSpinner.html): This method spawns configurable number of threads that will execute callbacks messages in parallel when they are recieved, but it will blocks the execution of the thread (main thread) that calls it. Note that one specify callback message can be processed at a time. Please refer to this [explanation](https://levelup.gitconnected.com/ros-spinning-threading-queuing-aac9c0a793f). `# allow_concurrent_callbacks`
 - [**Asynchronous Spinner**](http://ros.org/doc/groovy/api/roscpp/html/classros_1_1AsyncSpinner.html): This method spawns configurable number of threads that will execute callback messages in parallel when recieved, however, unlike the previous one, this method does **not** block the thread (main thread) that calls it. The start/stop method allows the control of when callback messages starts or stops the process. 
 
+## Multiple Spinners
+
+Allowing multiple spinners (threads) to preform on callback messages in callback queue.
+
 ## Multiple Callback Queues and Multiple Spinners
 
 This method is generally preferred. Having multiple callback queues and spinners (threads) to handle each callback queue.
@@ -26,9 +30,6 @@ This method is generally preferred. Having multiple callback queues and spinners
 A ROS node with multiple callback queues and spinners.  
 ![img](resources/multi_cq_multi_sp.png)
 
-## Multiple Spinners
-
-Allowing multiple spinners (threads) to preform same callback at the same time.
 
 ## Reference
 
@@ -38,4 +39,5 @@ Allowing multiple spinners (threads) to preform same callback at the same time.
 - https://answers.ros.org/question/185153/ros-multithreading-example/
 - https://roboticsbackend.com/ros-asyncspinner-example/
 - https://levelup.gitconnected.com/ros-spinning-threading-queuing-aac9c0a793f
+- https://nicolovaligi.com/concurrency-and-parallelism-in-ros1-and-ros2-application-apis.html
 
