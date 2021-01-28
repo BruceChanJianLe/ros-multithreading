@@ -11,7 +11,7 @@ namespace multi_threading
         sub_a_ = global_nh_.subscribe<std_msgs::String>("topic_a", 1, 
             [this](const std_msgs::String::ConstPtr & msg)
             {
-                // Sleep for 3 second
+                // Sleep for 3 seconds
                 ros::Duration(3).sleep();
                 ROS_INFO_STREAM(ros::this_node::getName() << " topic_a says: " << msg->data.c_str());
             }
