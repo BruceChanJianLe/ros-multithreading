@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!-- launch topic publisher node -->
+    <node pkg="ros-multithreading" type="topic_publisher_node" name="topic_publisher_node" output="screen"/>
+
+    <!-- launch ordinary node -->
+    <node pkg="ros-multithreading" type="ordinary_node" name="ordinary_node" output="screen"/>
+
+</launch>
