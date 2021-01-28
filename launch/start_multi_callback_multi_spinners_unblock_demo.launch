@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+    <!-- launch topic publisher node -->
+    <node pkg="ros-multithreading" type="topic_publisher_node" name="topic_publisher_node" output="screen"/>
+
+    <!-- launch single callback multi spinners unblock node -->
+    <node pkg="ros-multithreading" type="multi_cb_multi_sp_unblock" name="multi_callback_multi_spinners_unblock_node" output="screen"/>
+
+</launch>
