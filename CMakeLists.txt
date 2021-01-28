@@ -30,6 +30,10 @@ target_link_libraries(topic_publisher_node ${catkin_LIBRARIES})
 add_executable(ordinary_node src/ordinary_node.cpp src/ordinary.cpp)
 target_link_libraries(ordinary_node ${catkin_LIBRARIES})
 
-# Single Callback Queue & Multiple Spinners (2)
+# Single Callback Queue & Multiple Spinners block (2)
 add_executable(single_cb_multi_sp_block src/single_callback_multi_spinners_block_node.cpp src/single_callback_multi_spinners_block.cpp)
 target_link_libraries(single_cb_multi_sp_block ${catkin_LIBRARIES})
+
+# Single Callback Queue & Multiple Spinners unblock (2)
+add_executable(single_cb_multi_sp_unblock src/single_callback_multi_spinners_unblock_node.cpp src/single_callback_multi_spinners_unblock.cpp )
+target_link_libraries(single_cb_multi_sp_unblock ${catkin_LIBRARIES})
