@@ -41,3 +41,7 @@ target_link_libraries(single_cb_multi_sp_unblock ${catkin_LIBRARIES})
 # Multiple Callback Queues & Multiple Spinners unblock (2)
 add_executable(multi_cb_multi_sp_unblock src/multi_callback_multi_spinners_unblock_node.cpp src/multi_callback_multi_spinners_unblock.cpp)
 target_link_libraries(multi_cb_multi_sp_unblock ${catkin_LIBRARIES})
+
+# Multiple Callback Queues & Multiple Spinners unblock (2) Alternative
+add_executable(multi_cb_multi_sp_unblock_alt src/multi_callback_multi_spinners_unblock_node_alt.cpp src/multi_callback_multi_spinners_unblock_alt.cpp)
+target_link_libraries(multi_cb_multi_sp_unblock_alt ${catkin_LIBRARIES})
