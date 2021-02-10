@@ -20,7 +20,9 @@ namespace multi_threading
                 // Sleep for 3 seconds
                 ros::Duration(3).sleep();
                 ROS_INFO_STREAM(ros::this_node::getName() << " topic_a says: " << msg->data.c_str());
-            }
+            },
+            ros::VoidConstPtr(),
+            ros::TransportHints().tcpNoDelay()
         );
 
         // Instantiate ROS sub_b_
@@ -28,7 +30,9 @@ namespace multi_threading
             [this](const std_msgs::String::ConstPtr & msg)
             {
                 ROS_INFO_STREAM(ros::this_node::getName() << " topic_b says: " << msg->data.c_str());
-            }
+            },
+            ros::VoidConstPtr(),
+            ros::TransportHints().tcpNoDelay()
         );
     }
 
