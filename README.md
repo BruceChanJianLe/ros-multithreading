@@ -30,6 +30,10 @@ This method is generally preferred. Having multiple callback queues and spinners
 A ROS node with multiple callback queues and spinners.  
 ![img](resources/multi_cq_multi_sp.png)
 
+## MultiThreading for Publisher
+
+If it has never occurred to you that you need multi threading ROS publisher, you can actually do it. Please refer to [gazebo-plugin-ros](https://github.com/BruceChanJianLe/gazebo-plugin-ros) for more information.
+
 
 ## Reference
 
