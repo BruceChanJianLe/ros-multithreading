@@ -44,4 +44,5 @@ If it has never occurred to you that you need multi threading ROS publisher, you
 - https://roboticsbackend.com/ros-asyncspinner-example/
 - https://levelup.gitconnected.com/ros-spinning-threading-queuing-aac9c0a793f
 - https://nicolovaligi.com/concurrency-and-parallelism-in-ros1-and-ros2-application-apis.html
+- https://yuzhangbit.github.io/tools/several-ways-of-writing-a-ros-node/
 
